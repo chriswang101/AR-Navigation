@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B75AC566FFB87A04D5859229 /* Pods_AR_NavigationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 100C893C257ABDCB4C78A46A /* Pods_AR_NavigationUITests.framework */; };
 		C15458921F5BA7D4001CF78A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15458911F5BA7D4001CF78A /* AppDelegate.swift */; };
 		C15458971F5BA7D4001CF78A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C15458951F5BA7D4001CF78A /* Main.storyboard */; };
 		C15458991F5BA7D4001CF78A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C15458981F5BA7D4001CF78A /* Assets.xcassets */; };
@@ -16,6 +17,8 @@
 		C15458C21F5BA88E001CF78A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15458C11F5BA88E001CF78A /* MapViewController.swift */; };
 		C15458C51F5BA92F001CF78A /* LocationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15458C41F5BA92F001CF78A /* LocationTableViewController.swift */; };
 		C15458C71F5BA959001CF78A /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15458C61F5BA958001CF78A /* Locations.swift */; };
+		DA717B1C0EAD486D3A02804D /* Pods_AR_Navigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C8A3DCAED53BE7AA84A0AC /* Pods_AR_Navigation.framework */; };
+		E45C9F6D864855C20A30E295 /* Pods_AR_NavigationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F3A6D19052A86D0CEFE73A6 /* Pods_AR_NavigationTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		100C893C257ABDCB4C78A46A /* Pods_AR_NavigationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AR_NavigationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		271424427E46215B1F6CD32F /* Pods-AR NavigationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR NavigationUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AR NavigationUITests/Pods-AR NavigationUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2F3A6D19052A86D0CEFE73A6 /* Pods_AR_NavigationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AR_NavigationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46556826834FCCD0076BA8B3 /* Pods-AR Navigation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR Navigation.release.xcconfig"; path = "Pods/Target Support Files/Pods-AR Navigation/Pods-AR Navigation.release.xcconfig"; sourceTree = "<group>"; };
+		63C8A3DCAED53BE7AA84A0AC /* Pods_AR_Navigation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AR_Navigation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7DB8A303FA343DA4A5A4578 /* Pods-AR NavigationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR NavigationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AR NavigationTests/Pods-AR NavigationTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C154588E1F5BA7D4001CF78A /* AR Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR Navigation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C15458911F5BA7D4001CF78A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C15458961F5BA7D4001CF78A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -51,6 +60,9 @@
 		C15458C11F5BA88E001CF78A /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		C15458C41F5BA92F001CF78A /* LocationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTableViewController.swift; sourceTree = "<group>"; };
 		C15458C61F5BA958001CF78A /* Locations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locations.swift; sourceTree = "<group>"; };
+		CD5CF26BCDA436E799052C86 /* Pods-AR NavigationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR NavigationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AR NavigationTests/Pods-AR NavigationTests.release.xcconfig"; sourceTree = "<group>"; };
+		EB09F654667F729827B9C637 /* Pods-AR Navigation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR Navigation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AR Navigation/Pods-AR Navigation.debug.xcconfig"; sourceTree = "<group>"; };
+		F33CF3A4D2BA467DB92178A3 /* Pods-AR NavigationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR NavigationUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AR NavigationUITests/Pods-AR NavigationUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA717B1C0EAD486D3A02804D /* Pods_AR_Navigation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E45C9F6D864855C20A30E295 /* Pods_AR_NavigationTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +86,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B75AC566FFB87A04D5859229 /* Pods_AR_NavigationUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28A0164AA252DB2D7DA256B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63C8A3DCAED53BE7AA84A0AC /* Pods_AR_Navigation.framework */,
+				2F3A6D19052A86D0CEFE73A6 /* Pods_AR_NavigationTests.framework */,
+				100C893C257ABDCB4C78A46A /* Pods_AR_NavigationUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		749A9DB7292E95B00FE6F988 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB09F654667F729827B9C637 /* Pods-AR Navigation.debug.xcconfig */,
+				46556826834FCCD0076BA8B3 /* Pods-AR Navigation.release.xcconfig */,
+				A7DB8A303FA343DA4A5A4578 /* Pods-AR NavigationTests.debug.xcconfig */,
+				CD5CF26BCDA436E799052C86 /* Pods-AR NavigationTests.release.xcconfig */,
+				271424427E46215B1F6CD32F /* Pods-AR NavigationUITests.debug.xcconfig */,
+				F33CF3A4D2BA467DB92178A3 /* Pods-AR NavigationUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C15458851F5BA7D4001CF78A = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +123,8 @@
 				C15458A51F5BA7D4001CF78A /* AR NavigationTests */,
 				C15458B01F5BA7D4001CF78A /* AR NavigationUITests */,
 				C154588F1F5BA7D4001CF78A /* Products */,
+				749A9DB7292E95B00FE6F988 /* Pods */,
+				28A0164AA252DB2D7DA256B0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -146,9 +186,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C15458B61F5BA7D4001CF78A /* Build configuration list for PBXNativeTarget "AR Navigation" */;
 			buildPhases = (
+				380E6EB56657D7F497B2A38F /* [CP] Check Pods Manifest.lock */,
 				C154588A1F5BA7D4001CF78A /* Sources */,
 				C154588B1F5BA7D4001CF78A /* Frameworks */,
 				C154588C1F5BA7D4001CF78A /* Resources */,
+				9F9451ABF9385C159E7A57AC /* [CP] Embed Pods Frameworks */,
+				222A1C80D3F425FEF02F87A9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -163,9 +206,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C15458B91F5BA7D4001CF78A /* Build configuration list for PBXNativeTarget "AR NavigationTests" */;
 			buildPhases = (
+				D8E3D4725B4EC51E208B61CB /* [CP] Check Pods Manifest.lock */,
 				C154589E1F5BA7D4001CF78A /* Sources */,
 				C154589F1F5BA7D4001CF78A /* Frameworks */,
 				C15458A01F5BA7D4001CF78A /* Resources */,
+				DFE16868504AFD6BE6338F7F /* [CP] Embed Pods Frameworks */,
+				BBCA4A7853BA044FC5F3D044 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -181,9 +227,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C15458BC1F5BA7D4001CF78A /* Build configuration list for PBXNativeTarget "AR NavigationUITests" */;
 			buildPhases = (
+				91DA2B6A5902EA50BA984F44 /* [CP] Check Pods Manifest.lock */,
 				C15458A91F5BA7D4001CF78A /* Sources */,
 				C15458AA1F5BA7D4001CF78A /* Frameworks */,
 				C15458AB1F5BA7D4001CF78A /* Resources */,
+				6E33A720FAC2B7B751C525E2 /* [CP] Embed Pods Frameworks */,
+				127211D755D775E0D3C1CEE9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -267,6 +316,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		127211D755D775E0D3C1CEE9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AR NavigationUITests/Pods-AR NavigationUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		222A1C80D3F425FEF02F87A9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AR Navigation/Pods-AR Navigation-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		380E6EB56657D7F497B2A38F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6E33A720FAC2B7B751C525E2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AR NavigationUITests/Pods-AR NavigationUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91DA2B6A5902EA50BA984F44 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9F9451ABF9385C159E7A57AC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AR Navigation/Pods-AR Navigation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBCA4A7853BA044FC5F3D044 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AR NavigationTests/Pods-AR NavigationTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8E3D4725B4EC51E208B61CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DFE16868504AFD6BE6338F7F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AR NavigationTests/Pods-AR NavigationTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C154588A1F5BA7D4001CF78A /* Sources */ = {
@@ -440,6 +627,7 @@
 		};
 		C15458B71F5BA7D4001CF78A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB09F654667F729827B9C637 /* Pods-AR Navigation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -455,6 +643,7 @@
 		};
 		C15458B81F5BA7D4001CF78A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46556826834FCCD0076BA8B3 /* Pods-AR Navigation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -470,6 +659,7 @@
 		};
 		C15458BA1F5BA7D4001CF78A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7DB8A303FA343DA4A5A4578 /* Pods-AR NavigationTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -486,6 +676,7 @@
 		};
 		C15458BB1F5BA7D4001CF78A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD5CF26BCDA436E799052C86 /* Pods-AR NavigationTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -502,6 +693,7 @@
 		};
 		C15458BD1F5BA7D4001CF78A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 271424427E46215B1F6CD32F /* Pods-AR NavigationUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -517,6 +709,7 @@
 		};
 		C15458BE1F5BA7D4001CF78A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F33CF3A4D2BA467DB92178A3 /* Pods-AR NavigationUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

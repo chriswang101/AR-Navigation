@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSCameraUsageDescription</key>
+	<string>The app would like to use the camera for augmented reality functionality.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>The app would like to use your location for navigation functionality.</string>
 	<key>CFBundleDevelopmentRegion</key>
