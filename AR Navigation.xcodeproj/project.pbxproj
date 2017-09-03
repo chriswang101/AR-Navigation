@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		C15458921F5BA7D4001CF78A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15458911F5BA7D4001CF78A /* AppDelegate.swift */; };
-		C15458941F5BA7D4001CF78A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15458931F5BA7D4001CF78A /* ViewController.swift */; };
 		C15458971F5BA7D4001CF78A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C15458951F5BA7D4001CF78A /* Main.storyboard */; };
 		C15458991F5BA7D4001CF78A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C15458981F5BA7D4001CF78A /* Assets.xcassets */; };
 		C154589C1F5BA7D4001CF78A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C154589A1F5BA7D4001CF78A /* LaunchScreen.storyboard */; };
 		C15458A71F5BA7D4001CF78A /* AR_NavigationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15458A61F5BA7D4001CF78A /* AR_NavigationTests.swift */; };
 		C15458B21F5BA7D4001CF78A /* AR_NavigationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15458B11F5BA7D4001CF78A /* AR_NavigationUITests.swift */; };
+		C15458C21F5BA88E001CF78A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15458C11F5BA88E001CF78A /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		C154588E1F5BA7D4001CF78A /* AR Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR Navigation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C15458911F5BA7D4001CF78A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C15458931F5BA7D4001CF78A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C15458961F5BA7D4001CF78A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C15458981F5BA7D4001CF78A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C154589B1F5BA7D4001CF78A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		C15458AD1F5BA7D4001CF78A /* AR NavigationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AR NavigationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C15458B11F5BA7D4001CF78A /* AR_NavigationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR_NavigationUITests.swift; sourceTree = "<group>"; };
 		C15458B31F5BA7D4001CF78A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C15458C11F5BA88E001CF78A /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +97,9 @@
 		C15458901F5BA7D4001CF78A /* AR Navigation */ = {
 			isa = PBXGroup;
 			children = (
-				C15458911F5BA7D4001CF78A /* AppDelegate.swift */,
-				C15458931F5BA7D4001CF78A /* ViewController.swift */,
+				C15458C31F5BA897001CF78A /* Supporting Files */,
+				C15458C11F5BA88E001CF78A /* MapViewController.swift */,
 				C15458951F5BA7D4001CF78A /* Main.storyboard */,
-				C15458981F5BA7D4001CF78A /* Assets.xcassets */,
-				C154589A1F5BA7D4001CF78A /* LaunchScreen.storyboard */,
-				C154589D1F5BA7D4001CF78A /* Info.plist */,
 			);
 			path = "AR Navigation";
 			sourceTree = "<group>";
@@ -123,6 +120,17 @@
 				C15458B31F5BA7D4001CF78A /* Info.plist */,
 			);
 			path = "AR NavigationUITests";
+			sourceTree = "<group>";
+		};
+		C15458C31F5BA897001CF78A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C15458911F5BA7D4001CF78A /* AppDelegate.swift */,
+				C15458981F5BA7D4001CF78A /* Assets.xcassets */,
+				C154589A1F5BA7D4001CF78A /* LaunchScreen.storyboard */,
+				C154589D1F5BA7D4001CF78A /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +267,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C15458941F5BA7D4001CF78A /* ViewController.swift in Sources */,
 				C15458921F5BA7D4001CF78A /* AppDelegate.swift in Sources */,
+				C15458C21F5BA88E001CF78A /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +435,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SM2R6CMMFK;
 				INFOPLIST_FILE = "AR Navigation/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-.AR-Navigation";
@@ -441,6 +450,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SM2R6CMMFK;
 				INFOPLIST_FILE = "AR Navigation/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-.AR-Navigation";
