@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="Crg-B4-Z1X">
             <objects>
-                <viewController id="Wr0-fe-Wlb" customClass="ViewController" customModule="MapView" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Wr0-fe-Wlb" customClass="MapViewController" customModule="AR_Navigation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="W9p-iP-hQA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -42,7 +42,7 @@
         <!--Location Table View Controller-->
         <scene sceneID="Q3t-k8-7tS">
             <objects>
-                <tableViewController storyboardIdentifier="LocationTableViewController" id="tYA-Qg-YO3" customClass="LocationTableViewController" customModule="MapView" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="LocationTableViewController" id="tYA-Qg-YO3" customClass="LocationTableViewController" customModule="AR_Navigation" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="LBa-Je-E1q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

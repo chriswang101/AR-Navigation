@@ -14,6 +14,8 @@
 		C15458A71F5BA7D4001CF78A /* AR_NavigationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15458A61F5BA7D4001CF78A /* AR_NavigationTests.swift */; };
 		C15458B21F5BA7D4001CF78A /* AR_NavigationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15458B11F5BA7D4001CF78A /* AR_NavigationUITests.swift */; };
 		C15458C21F5BA88E001CF78A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15458C11F5BA88E001CF78A /* MapViewController.swift */; };
+		C15458C51F5BA92F001CF78A /* LocationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15458C41F5BA92F001CF78A /* LocationTableViewController.swift */; };
+		C15458C71F5BA959001CF78A /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15458C61F5BA958001CF78A /* Locations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		C15458B11F5BA7D4001CF78A /* AR_NavigationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR_NavigationUITests.swift; sourceTree = "<group>"; };
 		C15458B31F5BA7D4001CF78A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C15458C11F5BA88E001CF78A /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		C15458C41F5BA92F001CF78A /* LocationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTableViewController.swift; sourceTree = "<group>"; };
+		C15458C61F5BA958001CF78A /* Locations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +102,11 @@
 			isa = PBXGroup;
 			children = (
 				C15458C31F5BA897001CF78A /* Supporting Files */,
-				C15458C11F5BA88E001CF78A /* MapViewController.swift */,
 				C15458951F5BA7D4001CF78A /* Main.storyboard */,
+				C15458C11F5BA88E001CF78A /* MapViewController.swift */,
+				C15458C41F5BA92F001CF78A /* LocationTableViewController.swift */,
+				C15458C61F5BA958001CF78A /* Locations.swift */,
+				C154589D1F5BA7D4001CF78A /* Info.plist */,
 			);
 			path = "AR Navigation";
 			sourceTree = "<group>";
@@ -128,7 +135,6 @@
 				C15458911F5BA7D4001CF78A /* AppDelegate.swift */,
 				C15458981F5BA7D4001CF78A /* Assets.xcassets */,
 				C154589A1F5BA7D4001CF78A /* LaunchScreen.storyboard */,
-				C154589D1F5BA7D4001CF78A /* Info.plist */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -269,6 +275,8 @@
 			files = (
 				C15458921F5BA7D4001CF78A /* AppDelegate.swift in Sources */,
 				C15458C21F5BA88E001CF78A /* MapViewController.swift in Sources */,
+				C15458C71F5BA959001CF78A /* Locations.swift in Sources */,
+				C15458C51F5BA92F001CF78A /* LocationTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
