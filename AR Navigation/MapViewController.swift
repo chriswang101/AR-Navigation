@@ -18,7 +18,7 @@ class MapViewController: UIViewController {
     let locationManager = CLLocationManager()
     let defaultRegion = MKCoordinateRegion(
         center: CLLocationCoordinate2DMake(34.0216878, -118.2857177),
-        span: MKCoordinateSpanMake(0.05, 0.05)
+        span: MKCoordinateSpanMake(0.1, 0.1)
     )
     
     override func viewDidLoad() {

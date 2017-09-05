@@ -17,6 +17,7 @@
 		C15458C21F5BA88E001CF78A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15458C11F5BA88E001CF78A /* MapViewController.swift */; };
 		C15458C51F5BA92F001CF78A /* LocationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15458C41F5BA92F001CF78A /* LocationTableViewController.swift */; };
 		C15458C71F5BA959001CF78A /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15458C61F5BA958001CF78A /* Locations.swift */; };
+		C15458CD1F5BB337001CF78A /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15458CC1F5BB337001CF78A /* ARViewController.swift */; };
 		DA717B1C0EAD486D3A02804D /* Pods_AR_Navigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C8A3DCAED53BE7AA84A0AC /* Pods_AR_Navigation.framework */; };
 		E45C9F6D864855C20A30E295 /* Pods_AR_NavigationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F3A6D19052A86D0CEFE73A6 /* Pods_AR_NavigationTests.framework */; };
 /* End PBXBuildFile section */
@@ -60,6 +61,7 @@
 		C15458C11F5BA88E001CF78A /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		C15458C41F5BA92F001CF78A /* LocationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTableViewController.swift; sourceTree = "<group>"; };
 		C15458C61F5BA958001CF78A /* Locations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locations.swift; sourceTree = "<group>"; };
+		C15458CC1F5BB337001CF78A /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 		CD5CF26BCDA436E799052C86 /* Pods-AR NavigationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR NavigationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AR NavigationTests/Pods-AR NavigationTests.release.xcconfig"; sourceTree = "<group>"; };
 		EB09F654667F729827B9C637 /* Pods-AR Navigation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR Navigation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AR Navigation/Pods-AR Navigation.debug.xcconfig"; sourceTree = "<group>"; };
 		F33CF3A4D2BA467DB92178A3 /* Pods-AR NavigationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR NavigationUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AR NavigationUITests/Pods-AR NavigationUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				C15458951F5BA7D4001CF78A /* Main.storyboard */,
 				C15458C11F5BA88E001CF78A /* MapViewController.swift */,
 				C15458C41F5BA92F001CF78A /* LocationTableViewController.swift */,
+				C15458CC1F5BB337001CF78A /* ARViewController.swift */,
 				C15458C61F5BA958001CF78A /* Locations.swift */,
 				C154589D1F5BA7D4001CF78A /* Info.plist */,
 			);
@@ -464,6 +467,7 @@
 				C15458C21F5BA88E001CF78A /* MapViewController.swift in Sources */,
 				C15458C71F5BA959001CF78A /* Locations.swift in Sources */,
 				C15458C51F5BA92F001CF78A /* LocationTableViewController.swift in Sources */,
+				C15458CD1F5BB337001CF78A /* ARViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
