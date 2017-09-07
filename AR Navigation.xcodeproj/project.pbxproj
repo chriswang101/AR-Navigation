@@ -144,10 +144,8 @@
 			isa = PBXGroup;
 			children = (
 				C15458C31F5BA897001CF78A /* Supporting Files */,
+				C15A2CE71F61135B00B791A6 /* ViewControllers */,
 				C15458951F5BA7D4001CF78A /* Main.storyboard */,
-				C15458C11F5BA88E001CF78A /* MapViewController.swift */,
-				C15458C41F5BA92F001CF78A /* LocationTableViewController.swift */,
-				C15458CC1F5BB337001CF78A /* ARViewController.swift */,
 				C15458C61F5BA958001CF78A /* Locations.swift */,
 				C154589D1F5BA7D4001CF78A /* Info.plist */,
 			);
@@ -180,6 +178,16 @@
 				C154589A1F5BA7D4001CF78A /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C15A2CE71F61135B00B791A6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C15458C11F5BA88E001CF78A /* MapViewController.swift */,
+				C15458C41F5BA92F001CF78A /* LocationTableViewController.swift */,
+				C15458CC1F5BB337001CF78A /* ARViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

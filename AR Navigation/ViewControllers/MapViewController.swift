@@ -71,5 +71,6 @@ extension MapViewController: CLLocationManagerDelegate {
 extension MapViewController: SearchHandleDelegate {
     func didSelectLocation(selectedLocation: location) {
         print(selectedLocation.name)
+        
     }
 }
