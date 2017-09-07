@@ -10,6 +10,7 @@ import UIKit
 
 class LocationTableViewController: UITableViewController {
     
+    var delegate: SearchHandleDelegate? = nil
     private var filteredLocations = [location]()
     
     override func viewDidLoad() {
@@ -36,11 +37,19 @@ class LocationTableViewController: UITableViewController {
     }
     
      // Pass the selected object to the detail view controller
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let searchResultsController = searchResultsController else {
+            return
+        }
         
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
+        var location: location
+        if isFiltering(searchController: searchResultsController) {
+            location = filteredLocations[indexPath.row]
+        } else {
+            location = locations[indexPath.row]
+        }
+        delegate?.didSelectLocation(selectedLocation: location)
+    }
     
     // Private instance methods
     func isFiltering(searchController: UISearchController) -> Bool {
@@ -48,6 +57,7 @@ class LocationTableViewController: UITableViewController {
         let searchBarHasText: Bool = !(searchController.searchBar.text?.isEmpty ?? true)
         return (searchBarFiltering && searchBarHasText)
     }
+    
 }
 
 

@@ -9,11 +9,15 @@
 import UIKit
 import MapKit
 
+protocol SearchHandleDelegate {
+    func didSelectLocation(selectedLocation: location)
+}
+
+var searchResultsController: UISearchController? = nil
+
 class MapViewController: UIViewController {
     
     @IBOutlet weak var mapView: MKMapView!
-    
-    var searchResultsController: UISearchController? = nil
     
     let locationManager = CLLocationManager()
     let defaultRegion = MKCoordinateRegion(
@@ -35,7 +39,7 @@ class MapViewController: UIViewController {
         let searchResultsTable = storyboard!.instantiateViewController(withIdentifier: "LocationTableViewController") as! LocationTableViewController
         searchResultsController = UISearchController(searchResultsController: searchResultsTable)
         searchResultsController?.searchResultsUpdater = searchResultsTable
-        
+        searchResultsTable.delegate = self
         // Initialize search bar
         let searchBar = searchResultsController!.searchBar
         searchBar.sizeToFit()
@@ -61,5 +65,11 @@ extension MapViewController: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print("There was an error: \(error)")
+    }
+}
+
+extension MapViewController: SearchHandleDelegate {
+    func didSelectLocation(selectedLocation: location) {
+        print(selectedLocation.name)
     }
 }
