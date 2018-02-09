@@ -1,0 +1,6 @@
+framework module Pods_AR_Campus {
+  umbrella header "Pods-AR Campus-umbrella.h"
+
+  export *
+  module * { export * }
+}

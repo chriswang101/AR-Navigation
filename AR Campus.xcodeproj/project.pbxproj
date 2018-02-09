@@ -1,0 +1,674 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3072664BA7F365F8BA28FCC4 /* Pods_AR_Campus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE51F2E64764D222C099088 /* Pods_AR_Campus.framework */; };
+		C161F6601FB6EFB400EB9B39 /* CoreLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C161F65E1FB6EFB300EB9B39 /* CoreLocation.swift */; };
+		C161F6611FB6EFB400EB9B39 /* Turf.swift in Sources */ = {isa = PBXBuildFile; fileRef = C161F65F1FB6EFB400EB9B39 /* Turf.swift */; };
+		C161F6641FB720E000EB9B39 /* LocationSearchTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C161F6631FB720E000EB9B39 /* LocationSearchTable.swift */; };
+		C19F05071FB63776008571FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19F05061FB63776008571FC /* AppDelegate.swift */; };
+		C19F05091FB63776008571FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19F05081FB63776008571FC /* ViewController.swift */; };
+		C19F050C1FB63776008571FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C19F050A1FB63776008571FC /* Main.storyboard */; };
+		C19F050E1FB63776008571FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C19F050D1FB63776008571FC /* Assets.xcassets */; };
+		C19F05111FB63776008571FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C19F050F1FB63776008571FC /* LaunchScreen.storyboard */; };
+		C19F051C1FB63777008571FC /* AR_CampusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19F051B1FB63777008571FC /* AR_CampusTests.swift */; };
+		C19F05271FB63777008571FC /* AR_CampusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19F05261FB63777008571FC /* AR_CampusUITests.swift */; };
+		C19F05351FB64C9F008571FC /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19F05341FB64C9F008571FC /* MapViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C19F05181FB63777008571FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C19F04FB1FB63776008571FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C19F05021FB63776008571FC;
+			remoteInfo = "AR Campus";
+		};
+		C19F05231FB63777008571FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C19F04FB1FB63776008571FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C19F05021FB63776008571FC;
+			remoteInfo = "AR Campus";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		32FA8D8258A3F4E41EC9CC03 /* Pods-AR Campus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR Campus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AR Campus/Pods-AR Campus.debug.xcconfig"; sourceTree = "<group>"; };
+		5AE51F2E64764D222C099088 /* Pods_AR_Campus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AR_Campus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		855885B6609499AE83A0D6D3 /* Pods_AR_CampusUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AR_CampusUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD66813220D7D15513A80CBB /* Pods_AR_CampusTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AR_CampusTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2CC6E7DB445467914B5E5F1 /* Pods-AR Campus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR Campus.release.xcconfig"; path = "Pods/Target Support Files/Pods-AR Campus/Pods-AR Campus.release.xcconfig"; sourceTree = "<group>"; };
+		C161F65E1FB6EFB300EB9B39 /* CoreLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreLocation.swift; sourceTree = "<group>"; };
+		C161F65F1FB6EFB400EB9B39 /* Turf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Turf.swift; sourceTree = "<group>"; };
+		C161F6631FB720E000EB9B39 /* LocationSearchTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchTable.swift; sourceTree = "<group>"; };
+		C19F05031FB63776008571FC /* AR Campus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR Campus.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C19F05061FB63776008571FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C19F05081FB63776008571FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C19F050B1FB63776008571FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C19F050D1FB63776008571FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C19F05101FB63776008571FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C19F05121FB63776008571FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C19F05171FB63777008571FC /* AR CampusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AR CampusTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C19F051B1FB63777008571FC /* AR_CampusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR_CampusTests.swift; sourceTree = "<group>"; };
+		C19F051D1FB63777008571FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C19F05221FB63777008571FC /* AR CampusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AR CampusUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C19F05261FB63777008571FC /* AR_CampusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR_CampusUITests.swift; sourceTree = "<group>"; };
+		C19F05281FB63777008571FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C19F05341FB64C9F008571FC /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C19F05001FB63776008571FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3072664BA7F365F8BA28FCC4 /* Pods_AR_Campus.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C19F05141FB63777008571FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C19F051F1FB63777008571FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B82F8B7C00D9E51C79C56A6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5AE51F2E64764D222C099088 /* Pods_AR_Campus.framework */,
+				AD66813220D7D15513A80CBB /* Pods_AR_CampusTests.framework */,
+				855885B6609499AE83A0D6D3 /* Pods_AR_CampusUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C161F6621FB6EFB800EB9B39 /* Turf */ = {
+			isa = PBXGroup;
+			children = (
+				C161F65E1FB6EFB300EB9B39 /* CoreLocation.swift */,
+				C161F65F1FB6EFB400EB9B39 /* Turf.swift */,
+			);
+			path = Turf;
+			sourceTree = "<group>";
+		};
+		C19F04FA1FB63776008571FC = {
+			isa = PBXGroup;
+			children = (
+				C19F05051FB63776008571FC /* AR Campus */,
+				C19F051A1FB63777008571FC /* AR CampusTests */,
+				C19F05251FB63777008571FC /* AR CampusUITests */,
+				C19F05041FB63776008571FC /* Products */,
+				F73D99B29350F8D02DB4C8A0 /* Pods */,
+				B82F8B7C00D9E51C79C56A6F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C19F05041FB63776008571FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C19F05031FB63776008571FC /* AR Campus.app */,
+				C19F05171FB63777008571FC /* AR CampusTests.xctest */,
+				C19F05221FB63777008571FC /* AR CampusUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C19F05051FB63776008571FC /* AR Campus */ = {
+			isa = PBXGroup;
+			children = (
+				C19F05061FB63776008571FC /* AppDelegate.swift */,
+				C19F05081FB63776008571FC /* ViewController.swift */,
+				C19F05341FB64C9F008571FC /* MapViewController.swift */,
+				C161F6631FB720E000EB9B39 /* LocationSearchTable.swift */,
+				C161F6621FB6EFB800EB9B39 /* Turf */,
+				C19F050A1FB63776008571FC /* Main.storyboard */,
+				C19F050D1FB63776008571FC /* Assets.xcassets */,
+				C19F050F1FB63776008571FC /* LaunchScreen.storyboard */,
+				C19F05121FB63776008571FC /* Info.plist */,
+			);
+			path = "AR Campus";
+			sourceTree = "<group>";
+		};
+		C19F051A1FB63777008571FC /* AR CampusTests */ = {
+			isa = PBXGroup;
+			children = (
+				C19F051B1FB63777008571FC /* AR_CampusTests.swift */,
+				C19F051D1FB63777008571FC /* Info.plist */,
+			);
+			path = "AR CampusTests";
+			sourceTree = "<group>";
+		};
+		C19F05251FB63777008571FC /* AR CampusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C19F05261FB63777008571FC /* AR_CampusUITests.swift */,
+				C19F05281FB63777008571FC /* Info.plist */,
+			);
+			path = "AR CampusUITests";
+			sourceTree = "<group>";
+		};
+		F73D99B29350F8D02DB4C8A0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				32FA8D8258A3F4E41EC9CC03 /* Pods-AR Campus.debug.xcconfig */,
+				B2CC6E7DB445467914B5E5F1 /* Pods-AR Campus.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C19F05021FB63776008571FC /* AR Campus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C19F052B1FB63777008571FC /* Build configuration list for PBXNativeTarget "AR Campus" */;
+			buildPhases = (
+				BA7D2337651410648D515B99 /* [CP] Check Pods Manifest.lock */,
+				C19F04FF1FB63776008571FC /* Sources */,
+				C19F05001FB63776008571FC /* Frameworks */,
+				C19F05011FB63776008571FC /* Resources */,
+				F299876466F3B8439603F27A /* [CP] Embed Pods Frameworks */,
+				53FBC0DBF1CDFEDF12D97ABD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AR Campus";
+			productName = "AR Campus";
+			productReference = C19F05031FB63776008571FC /* AR Campus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C19F05161FB63777008571FC /* AR CampusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C19F052E1FB63777008571FC /* Build configuration list for PBXNativeTarget "AR CampusTests" */;
+			buildPhases = (
+				C19F05131FB63777008571FC /* Sources */,
+				C19F05141FB63777008571FC /* Frameworks */,
+				C19F05151FB63777008571FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C19F05191FB63777008571FC /* PBXTargetDependency */,
+			);
+			name = "AR CampusTests";
+			productName = "AR CampusTests";
+			productReference = C19F05171FB63777008571FC /* AR CampusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C19F05211FB63777008571FC /* AR CampusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C19F05311FB63777008571FC /* Build configuration list for PBXNativeTarget "AR CampusUITests" */;
+			buildPhases = (
+				C19F051E1FB63777008571FC /* Sources */,
+				C19F051F1FB63777008571FC /* Frameworks */,
+				C19F05201FB63777008571FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C19F05241FB63777008571FC /* PBXTargetDependency */,
+			);
+			name = "AR CampusUITests";
+			productName = "AR CampusUITests";
+			productReference = C19F05221FB63777008571FC /* AR CampusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C19F04FB1FB63776008571FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Chris Wang";
+				TargetAttributes = {
+					C19F05021FB63776008571FC = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					C19F05161FB63777008571FC = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C19F05021FB63776008571FC;
+					};
+					C19F05211FB63777008571FC = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C19F05021FB63776008571FC;
+					};
+				};
+			};
+			buildConfigurationList = C19F04FE1FB63776008571FC /* Build configuration list for PBXProject "AR Campus" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C19F04FA1FB63776008571FC;
+			productRefGroup = C19F05041FB63776008571FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C19F05021FB63776008571FC /* AR Campus */,
+				C19F05161FB63777008571FC /* AR CampusTests */,
+				C19F05211FB63777008571FC /* AR CampusUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C19F05011FB63776008571FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C19F05111FB63776008571FC /* LaunchScreen.storyboard in Resources */,
+				C19F050E1FB63776008571FC /* Assets.xcassets in Resources */,
+				C19F050C1FB63776008571FC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C19F05151FB63777008571FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C19F05201FB63777008571FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		53FBC0DBF1CDFEDF12D97ABD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AR Campus/Pods-AR Campus-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA7D2337651410648D515B99 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AR Campus-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F299876466F3B8439603F27A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AR Campus/Pods-AR Campus-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ARCL/ARCL.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ARCL.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AR Campus/Pods-AR Campus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C19F04FF1FB63776008571FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C161F6611FB6EFB400EB9B39 /* Turf.swift in Sources */,
+				C19F05091FB63776008571FC /* ViewController.swift in Sources */,
+				C19F05351FB64C9F008571FC /* MapViewController.swift in Sources */,
+				C161F6641FB720E000EB9B39 /* LocationSearchTable.swift in Sources */,
+				C19F05071FB63776008571FC /* AppDelegate.swift in Sources */,
+				C161F6601FB6EFB400EB9B39 /* CoreLocation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C19F05131FB63777008571FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C19F051C1FB63777008571FC /* AR_CampusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C19F051E1FB63777008571FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C19F05271FB63777008571FC /* AR_CampusUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C19F05191FB63777008571FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C19F05021FB63776008571FC /* AR Campus */;
+			targetProxy = C19F05181FB63777008571FC /* PBXContainerItemProxy */;
+		};
+		C19F05241FB63777008571FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C19F05021FB63776008571FC /* AR Campus */;
+			targetProxy = C19F05231FB63777008571FC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C19F050A1FB63776008571FC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C19F050B1FB63776008571FC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C19F050F1FB63776008571FC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C19F05101FB63776008571FC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C19F05291FB63777008571FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C19F052A1FB63777008571FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C19F052C1FB63777008571FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32FA8D8258A3F4E41EC9CC03 /* Pods-AR Campus.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SM2R6CMMFK;
+				INFOPLIST_FILE = "AR Campus/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.AR-Campus";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C19F052D1FB63777008571FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2CC6E7DB445467914B5E5F1 /* Pods-AR Campus.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SM2R6CMMFK;
+				INFOPLIST_FILE = "AR Campus/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.AR-Campus";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C19F052F1FB63777008571FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "AR CampusTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.AR-CampusTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AR Campus.app/AR Campus";
+			};
+			name = Debug;
+		};
+		C19F05301FB63777008571FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "AR CampusTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.AR-CampusTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AR Campus.app/AR Campus";
+			};
+			name = Release;
+		};
+		C19F05321FB63777008571FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "AR CampusUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.AR-CampusUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "AR Campus";
+			};
+			name = Debug;
+		};
+		C19F05331FB63777008571FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "AR CampusUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.AR-CampusUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "AR Campus";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C19F04FE1FB63776008571FC /* Build configuration list for PBXProject "AR Campus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C19F05291FB63777008571FC /* Debug */,
+				C19F052A1FB63777008571FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C19F052B1FB63777008571FC /* Build configuration list for PBXNativeTarget "AR Campus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C19F052C1FB63777008571FC /* Debug */,
+				C19F052D1FB63777008571FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C19F052E1FB63777008571FC /* Build configuration list for PBXNativeTarget "AR CampusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C19F052F1FB63777008571FC /* Debug */,
+				C19F05301FB63777008571FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C19F05311FB63777008571FC /* Build configuration list for PBXNativeTarget "AR CampusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C19F05321FB63777008571FC /* Debug */,
+				C19F05331FB63777008571FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C19F04FB1FB63776008571FC /* Project object */;
+}

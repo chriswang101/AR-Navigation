@@ -48,11 +48,18 @@ public class SceneLocationView: ARSCNView, ARSCNViewDelegate {
     ///Not advisable to change this as the scene is ongoing.
     public var locationEstimateMethod: LocationEstimateMethod = .mostRelevantEstimate
     
-    let locationManager = LocationManager()
+    public let locationManager = LocationManager()
     ///When set to true, displays an axes node at the start of the scene
     public var showAxesNode = false
     
     private(set) var locationNodes = [LocationNode]()
+    
+    public func resetLocationNodes() {
+        for locationNode in locationNodes {
+            self.removeLocationNode(locationNode: locationNode)
+        }
+        locationNodes = [LocationNode]()
+    }
     
     private var sceneLocationEstimates = [SceneLocationEstimate]()
     
@@ -74,7 +81,7 @@ public class SceneLocationView: ARSCNView, ARSCNViewDelegate {
     
     ///Whether debugging feature points should be displayed.
     ///Defaults to false
-    var showFeaturePoints = false
+    public var showFeaturePoints = false
     
     ///Only to be overrided if you plan on manually setting True North.
     ///When true, sets up the scene to face what the device considers to be True North.
@@ -219,7 +226,7 @@ public class SceneLocationView: ARSCNView, ARSCNViewDelegate {
     ///This takes into account horizontal accuracy, and the time at which the estimation was taken
     ///favouring the most accurate, and then the most recent result.
     ///This doesn't indicate where the user currently is.
-    func bestLocationEstimate() -> SceneLocationEstimate? {
+    public func bestLocationEstimate() -> SceneLocationEstimate? {
         let sortedLocationEstimates = sceneLocationEstimates.sorted(by: {
             if $0.location.horizontalAccuracy == $1.location.horizontalAccuracy {
                 return $0.location.timestamp > $1.location.timestamp
@@ -405,24 +412,13 @@ public class SceneLocationView: ARSCNView, ARSCNViewDelegate {
         if let annotationNode = locationNode as? LocationAnnotationNode {
             //The scale of a node with a billboard constraint applied is ignored
             //The annotation subnode itself, as a subnode, has the scale applied to it
-            let appliedScale = locationNode.scale
             locationNode.scale = SCNVector3(x: 1, y: 1, z: 1)
             
             var scale: Float
             
-            if annotationNode.scaleRelativeToDistance {
-                scale = appliedScale.y
-                annotationNode.annotationNode.scale = appliedScale
-            } else {
-                //Scale it to be an appropriate size so that it can be seen
-                scale = Float(adjustedDistance) * 0.181
-                
-                if distance > 3000 {
-                    scale = scale * 0.75
-                }
-                
-                annotationNode.annotationNode.scale = SCNVector3(x: scale, y: scale, z: scale)
-            }
+            // Scale the size of the icon according to distance from user
+            scale = Float(1 - ((0.9/500) * adjustedDistance))
+            if scale < 0.01 { scale = 0.01 }
             
             annotationNode.pivot = SCNMatrix4MakeTranslation(0, -1.1 * scale, 0)
         }
@@ -482,7 +478,53 @@ public class SceneLocationView: ARSCNView, ARSCNViewDelegate {
             print("camera did change tracking state: not available")
         }
     }
+    
+    // Functionality for adding colors
+    func createSphereNode(with radius: CGFloat, firstColor: UIColor, secondColor: UIColor) -> SCNNode {
+        let geometry = SCNSphere(radius: radius)
+        geometry.firstMaterial?.diffuse.contents = firstColor
+        
+        let sphereNode = SCNNode(geometry: geometry)
+        sphereNode.animateInterpolatedColor(from: firstColor, to: secondColor, duration: 1)
+        
+        return sphereNode
+    }
+    
 }
+
+// Extensions for adding colors
+extension SCNNode {
+    
+    func animateInterpolatedColor(from oldColor: UIColor, to newColor: UIColor, duration: Double) {
+        let act0 = SCNAction.customAction(duration: duration, action: { (node, elapsedTime) in
+            let percentage = elapsedTime / CGFloat(duration)
+            self.geometry?.firstMaterial?.diffuse.contents = newColor.interpolatedColor(to: oldColor, percentage: percentage)
+        })
+        let act1 = SCNAction.customAction(duration: duration, action: { (node, elapsedTime) in
+            let percentage = elapsedTime / CGFloat(duration)
+            self.geometry?.firstMaterial?.diffuse.contents = oldColor.interpolatedColor(to: newColor, percentage: percentage)
+        })
+        
+        let act = SCNAction.repeatForever(SCNAction.sequence([act0, act1]))
+        self.runAction(act)
+    }
+    
+}
+
+extension UIColor {
+    
+    // https://stackoverflow.com/questions/40472524/how-to-add-animations-to-change-sncnodes-color-scenekit
+    func interpolatedColor(to: UIColor, percentage: CGFloat) -> UIColor {
+        let fromComponents = self.cgColor.components!
+        let toComponents = to.cgColor.components!
+        let color = UIColor(red: fromComponents[0] + (toComponents[0] - fromComponents[0]) * percentage,
+                            green: fromComponents[1] + (toComponents[1] - fromComponents[1]) * percentage,
+                            blue: fromComponents[2] + (toComponents[2] - fromComponents[2]) * percentage,
+                            alpha: fromComponents[3] + (toComponents[3] - fromComponents[3]) * percentage)
+        return color
+    }
+}
+
 
 //MARK: LocationManager
 extension SceneLocationView: LocationManagerDelegate {

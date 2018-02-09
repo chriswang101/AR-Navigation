@@ -19,7 +19,7 @@ extension SceneLocationEstimate {
     }
     
     ///Translates the location by comparing with a given position
-    func translatedLocation(to position: SCNVector3) -> CLLocation {
+    public func translatedLocation(to position: SCNVector3) -> CLLocation {
         let translation = self.locationTranslation(to: position)
         let translatedLocation = self.location.translatedLocation(with: translation)
         
