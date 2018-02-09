@@ -13,7 +13,7 @@ To start off, users are able to search for a destination they want to go to. Aft
 * Written in Swift
 * Uses the [ARKit+CoreLocation framework](https://github.com/ProjectDent/ARKit-CoreLocation)
 
-## Try it out! 
-* Download the and ruun on an iOS device 
+## Try it Out! 
+* Clone the repository and run on an iOS device 
 	* requires iOS 11
 	* requires iPhone 6s and later
