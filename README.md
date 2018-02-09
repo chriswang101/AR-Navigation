@@ -1,26 +1,19 @@
-## Inspiration
-As a new student at university, it can be challenging to find your way around on foot. Even with map services like Apple Maps, it's still not intuitive enough to get around. Our app addresses this issue by providing intuitive navigation directions with augmented reality.
+# AR Navigation
 
-## What it does
+![Augmented reality navigation](/Media/demo.png)
+
+## Overview
+When using map apps (e.g. Google Maps), it can be challenging and unintuitive to find your way find your way around on foot. This app addresses this issue by overlaying navigation directions on an iPhone camera feed with augmented reality.
+
+## How it Works
 To start off, users are able to search for a destination they want to go to. Afterwards, the the app displays the route to the destination on a map view. The user can then use augmented reality to navigate to where they want to go. 
 
-## How we built it
+## How it was Built
 * Prototyped using Sketch
 * Written in Swift
+* Uses the [ARKit+CoreLocation framework](https://github.com/ProjectDent/ARKit-CoreLocation)
 
-## Challenges we ran into
-* Very short time frame
-* The fact that we were pretty new to mobile development
-
-## Accomplishments that we're proud of
-* Actually getting the augmented reality part of the app to function
-
-## What we learned
-* Coding with Swift and React Native
-* ARKit 
-* SLEEP IS FOR THE WEAK
-
-## What's next for Landmark 5C
-* Making a legit front end and login system
-* Improving the accuracy of the AR navigation functionality
-* Improving the frame rate of augmented reality with processing long trips
+## Try it out! 
+* Download the and ruun on an iOS device 
+	* requires iOS 11
+	* requires iPhone 6s and later
