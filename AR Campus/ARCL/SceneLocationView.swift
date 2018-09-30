@@ -315,6 +315,10 @@ public class SceneLocationView: ARSCNView, ARSCNViewDelegate {
 
         locationNode.removeFromParentNode()
     }
+    
+    public func resetLocationNodes() {
+        locationNodes = []
+    }
 
     private func confirmLocationOfDistantLocationNodes() {
         guard let currentPosition = currentScenePosition() else {

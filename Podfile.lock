@@ -1,11 +1,9 @@
 PODS:
-  - ARCL (1.0.4)
   - CocoaLumberjack/Default (3.4.2)
   - CocoaLumberjack/Swift (3.4.2):
     - CocoaLumberjack/Default
 
 DEPENDENCIES:
-  - ARCL
   - CocoaLumberjack/Swift (from `https://github.com/CocoaLumberjack/CocoaLumberjack`, branch `master`)
 
 EXTERNAL SOURCES:
@@ -19,9 +17,8 @@ CHECKOUT OPTIONS:
     :git: https://github.com/CocoaLumberjack/CocoaLumberjack
 
 SPEC CHECKSUMS:
-  ARCL: 5fd2b0d7aabf91f15dbc0e8c510b25516b8a755a
   CocoaLumberjack: 431b5643a0fedb12c441344054d8d5a4aa7c217d
 
-PODFILE CHECKSUM: 233716b4fdcc111135876d4d0a8e20920804f293
+PODFILE CHECKSUM: 3e6bbfafebbd4c9b4b0345c1b98732b3f3016476
 
 COCOAPODS: 1.3.1

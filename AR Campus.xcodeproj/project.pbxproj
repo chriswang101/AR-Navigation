@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		3072664BA7F365F8BA28FCC4 /* Pods_AR_Campus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE51F2E64764D222C099088 /* Pods_AR_Campus.framework */; };
+		C13E41C4216154FD0098728D /* SceneLocationEstimate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13E41BA216154FC0098728D /* SceneLocationEstimate+Extensions.swift */; };
+		C13E41C5216154FD0098728D /* CLLocation+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13E41BB216154FD0098728D /* CLLocation+Extensions.swift */; };
+		C13E41C6216154FD0098728D /* SCNVector3+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13E41BC216154FD0098728D /* SCNVector3+Extensions.swift */; };
+		C13E41C7216154FD0098728D /* LocationNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13E41BD216154FD0098728D /* LocationNode.swift */; };
+		C13E41C8216154FD0098728D /* SceneLocationEstimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13E41BE216154FD0098728D /* SceneLocationEstimate.swift */; };
+		C13E41C9216154FD0098728D /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13E41BF216154FD0098728D /* LocationManager.swift */; };
+		C13E41CA216154FD0098728D /* CGPoint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13E41C0216154FD0098728D /* CGPoint+Extensions.swift */; };
+		C13E41CB216154FD0098728D /* SceneLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13E41C1216154FD0098728D /* SceneLocationView.swift */; };
+		C13E41CC216154FD0098728D /* SCNNode+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13E41C2216154FD0098728D /* SCNNode+Extensions.swift */; };
+		C13E41CD216154FD0098728D /* FloatingPoint+Radians.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13E41C3216154FD0098728D /* FloatingPoint+Radians.swift */; };
 		C161F6601FB6EFB400EB9B39 /* CoreLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C161F65E1FB6EFB300EB9B39 /* CoreLocation.swift */; };
 		C161F6611FB6EFB400EB9B39 /* Turf.swift in Sources */ = {isa = PBXBuildFile; fileRef = C161F65F1FB6EFB400EB9B39 /* Turf.swift */; };
 		C161F6641FB720E000EB9B39 /* LocationSearchTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C161F6631FB720E000EB9B39 /* LocationSearchTable.swift */; };
@@ -44,6 +54,16 @@
 		855885B6609499AE83A0D6D3 /* Pods_AR_CampusUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AR_CampusUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD66813220D7D15513A80CBB /* Pods_AR_CampusTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AR_CampusTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2CC6E7DB445467914B5E5F1 /* Pods-AR Campus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR Campus.release.xcconfig"; path = "Pods/Target Support Files/Pods-AR Campus/Pods-AR Campus.release.xcconfig"; sourceTree = "<group>"; };
+		C13E41BA216154FC0098728D /* SceneLocationEstimate+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SceneLocationEstimate+Extensions.swift"; sourceTree = "<group>"; };
+		C13E41BB216154FD0098728D /* CLLocation+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocation+Extensions.swift"; sourceTree = "<group>"; };
+		C13E41BC216154FD0098728D /* SCNVector3+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SCNVector3+Extensions.swift"; sourceTree = "<group>"; };
+		C13E41BD216154FD0098728D /* LocationNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationNode.swift; sourceTree = "<group>"; };
+		C13E41BE216154FD0098728D /* SceneLocationEstimate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneLocationEstimate.swift; sourceTree = "<group>"; };
+		C13E41BF216154FD0098728D /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		C13E41C0216154FD0098728D /* CGPoint+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Extensions.swift"; sourceTree = "<group>"; };
+		C13E41C1216154FD0098728D /* SceneLocationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneLocationView.swift; sourceTree = "<group>"; };
+		C13E41C2216154FD0098728D /* SCNNode+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SCNNode+Extensions.swift"; sourceTree = "<group>"; };
+		C13E41C3216154FD0098728D /* FloatingPoint+Radians.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FloatingPoint+Radians.swift"; sourceTree = "<group>"; };
 		C161F65E1FB6EFB300EB9B39 /* CoreLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreLocation.swift; sourceTree = "<group>"; };
 		C161F65F1FB6EFB400EB9B39 /* Turf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Turf.swift; sourceTree = "<group>"; };
 		C161F6631FB720E000EB9B39 /* LocationSearchTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchTable.swift; sourceTree = "<group>"; };
@@ -99,6 +119,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C13E4192216153FC0098728D /* ARCL */ = {
+			isa = PBXGroup;
+			children = (
+				C13E41C0216154FD0098728D /* CGPoint+Extensions.swift */,
+				C13E41BB216154FD0098728D /* CLLocation+Extensions.swift */,
+				C13E41C3216154FD0098728D /* FloatingPoint+Radians.swift */,
+				C13E41BF216154FD0098728D /* LocationManager.swift */,
+				C13E41BD216154FD0098728D /* LocationNode.swift */,
+				C13E41BE216154FD0098728D /* SceneLocationEstimate.swift */,
+				C13E41BA216154FC0098728D /* SceneLocationEstimate+Extensions.swift */,
+				C13E41C1216154FD0098728D /* SceneLocationView.swift */,
+				C13E41C2216154FD0098728D /* SCNNode+Extensions.swift */,
+				C13E41BC216154FD0098728D /* SCNVector3+Extensions.swift */,
+			);
+			path = ARCL;
+			sourceTree = "<group>";
+		};
 		C161F6621FB6EFB800EB9B39 /* Turf */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +170,7 @@
 		C19F05051FB63776008571FC /* AR Campus */ = {
 			isa = PBXGroup;
 			children = (
+				C13E4192216153FC0098728D /* ARCL */,
 				C19F05061FB63776008571FC /* AppDelegate.swift */,
 				C19F05081FB63776008571FC /* ViewController.swift */,
 				C19F05341FB64C9F008571FC /* MapViewController.swift */,
@@ -346,12 +384,10 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-AR Campus/Pods-AR Campus-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/ARCL/ARCL.framework",
 				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ARCL.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,8 +403,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				C161F6611FB6EFB400EB9B39 /* Turf.swift in Sources */,
+				C13E41CD216154FD0098728D /* FloatingPoint+Radians.swift in Sources */,
+				C13E41C6216154FD0098728D /* SCNVector3+Extensions.swift in Sources */,
+				C13E41CB216154FD0098728D /* SceneLocationView.swift in Sources */,
+				C13E41CC216154FD0098728D /* SCNNode+Extensions.swift in Sources */,
+				C13E41C7216154FD0098728D /* LocationNode.swift in Sources */,
+				C13E41C5216154FD0098728D /* CLLocation+Extensions.swift in Sources */,
+				C13E41CA216154FD0098728D /* CGPoint+Extensions.swift in Sources */,
+				C13E41C8216154FD0098728D /* SceneLocationEstimate.swift in Sources */,
+				C13E41C4216154FD0098728D /* SceneLocationEstimate+Extensions.swift in Sources */,
 				C19F05091FB63776008571FC /* ViewController.swift in Sources */,
 				C19F05351FB64C9F008571FC /* MapViewController.swift in Sources */,
+				C13E41C9216154FD0098728D /* LocationManager.swift in Sources */,
 				C161F6641FB720E000EB9B39 /* LocationSearchTable.swift in Sources */,
 				C19F05071FB63776008571FC /* AppDelegate.swift in Sources */,
 				C161F6601FB6EFB400EB9B39 /* CoreLocation.swift in Sources */,
@@ -543,7 +589,7 @@
 				INFOPLIST_FILE = "AR Campus/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-.AR-Campus";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chriswang.AR-Campus";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -560,7 +606,7 @@
 				INFOPLIST_FILE = "AR Campus/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-.AR-Campus";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chriswang.AR-Campus";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

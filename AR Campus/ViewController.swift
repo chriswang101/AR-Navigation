@@ -10,7 +10,6 @@
 import UIKit
 import SceneKit
 import MapKit
-import ARCL
 import CoreLocation
 import CocoaLumberjack
 
@@ -90,14 +89,12 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        print("run")
         sceneLocationView.run()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
-        print("pause")
         // Pause the view's session
         sceneLocationView.pause()
     }
