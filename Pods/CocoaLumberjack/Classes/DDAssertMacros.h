@@ -14,7 +14,7 @@
 //   prior written permission of Deusty, LLC.
 
 /**
- * NSAssert replacement that will output a log message even when assertions are disabled.
+ * NSAsset replacement that will output a log message even when assertions are disabled.
  **/
 #define DDAssert(condition, frmt, ...)                                                \
         if (!(condition)) {                                                           \

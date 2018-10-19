@@ -144,9 +144,9 @@ unsigned long long const kDDDefaultLogFilesDiskQuota   = 20 * 1024 * 1024; // 20
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 - (void)observeValueForKeyPath:(NSString *)keyPath
-                      ofObject:(__unused id)object
+                      ofObject:(id)object
                         change:(NSDictionary *)change
-                       context:(__unused void *)context {
+                       context:(void *)context {
     NSNumber *old = change[NSKeyValueChangeOldKey];
     NSNumber *new = change[NSKeyValueChangeNewKey];
 
@@ -559,11 +559,6 @@ unsigned long long const kDDDefaultLogFilesDiskQuota   = 20 * 1024 * 1024; // 20
     NSTimeInterval _rollingFrequency;
 }
 
-/**
- Serial queue for synchronous access to `currentLogFileHandle`.
- */
-@property (nonatomic, strong) dispatch_queue_t currentLogFileHandleQueue;
-
 - (void)rollLogFileNow;
 - (void)maybeRollLogFileDueToAge;
 - (void)maybeRollLogFileDueToSize;
@@ -583,9 +578,7 @@ unsigned long long const kDDDefaultLogFilesDiskQuota   = 20 * 1024 * 1024; // 20
         _maximumFileSize = kDDDefaultLogMaxFileSize;
         _rollingFrequency = kDDDefaultLogRollingFrequency;
         _automaticallyAppendNewlineForCustomFormatters = YES;
-        
-        _currentLogFileHandleQueue = dispatch_queue_create("cocoa.lumberjack.fileLogger.currentLogFileHandleQueue", DISPATCH_QUEUE_SERIAL);
-        
+
         logFileManager = aLogFileManager;
 
         self.logFormatter = [DDLogFileFormatterDefault new];
@@ -768,7 +761,7 @@ unsigned long long const kDDDefaultLogFilesDiskQuota   = 20 * 1024 * 1024; // 20
     });
     #endif
 
-    int64_t delay = (int64_t)([logFileRollingDate timeIntervalSinceNow] * (NSTimeInterval) NSEC_PER_SEC);
+    uint64_t delay = (uint64_t)([logFileRollingDate timeIntervalSinceNow] * (NSTimeInterval) NSEC_PER_SEC);
     dispatch_time_t fireTime = dispatch_time(DISPATCH_TIME_NOW, delay);
 
     dispatch_source_set_timer(_rollingTimer, fireTime, DISPATCH_TIME_FOREVER, 1ull * NSEC_PER_SEC);
@@ -819,10 +812,8 @@ unsigned long long const kDDDefaultLogFilesDiskQuota   = 20 * 1024 * 1024; // 20
 
     [_currentLogFileHandle synchronizeFile];
     [_currentLogFileHandle closeFile];
-    dispatch_sync(self.currentLogFileHandleQueue, ^{
-        self->_currentLogFileHandle = nil;
-    });
-    
+    _currentLogFileHandle = nil;
+
     _currentLogFileInfo.isArchived = YES;
 
     if ([logFileManager respondsToSelector:@selector(didRollAndArchiveLogFile:)]) {
@@ -833,9 +824,7 @@ unsigned long long const kDDDefaultLogFilesDiskQuota   = 20 * 1024 * 1024; // 20
 
     if (_currentLogFileVnode) {
         dispatch_source_cancel(_currentLogFileVnode);
-        dispatch_sync(self.currentLogFileHandleQueue, ^{
-            self->_currentLogFileVnode = NULL;
-        });
+        _currentLogFileVnode = NULL;
     }
 
     if (_rollingTimer) {
@@ -950,47 +939,41 @@ unsigned long long const kDDDefaultLogFilesDiskQuota   = 20 * 1024 * 1024; // 20
 }
 
 - (NSFileHandle *)currentLogFileHandle {
-    __block NSFileHandle *localCurrentLogFileHandle;
-    
-    dispatch_sync(self.currentLogFileHandleQueue, ^{
-        if (self->_currentLogFileHandle == nil) {
-            NSString *logFilePath = [[self currentLogFileInfo] filePath];
-            
-            self->_currentLogFileHandle = [NSFileHandle fileHandleForWritingAtPath:logFilePath];
-            [self->_currentLogFileHandle seekToEndOfFile];
-            
-            if (self->_currentLogFileHandle) {
-                [self scheduleTimerToRollLogFileDueToAge];
-                
-                // Here we are monitoring the log file. In case if it would be deleted ormoved
-                // somewhere we want to roll it and use a new one.
-                self->_currentLogFileVnode = dispatch_source_create(
-                                                              DISPATCH_SOURCE_TYPE_VNODE,
-                                                                    (uintptr_t)[self->_currentLogFileHandle fileDescriptor],
-                                                              DISPATCH_VNODE_DELETE | DISPATCH_VNODE_RENAME,
-                                                              self.loggerQueue
-                                                              );
-                
-                dispatch_source_set_event_handler(self->_currentLogFileVnode, ^{ @autoreleasepool {
-                    NSLogInfo(@"DDFileLogger: Current logfile was moved. Rolling it and creating a new one");
-                    [self rollLogFileNow];
-                } });
-                
-#if !OS_OBJECT_USE_OBJC
-                dispatch_source_t vnode = self->_currentLogFileVnode;
-                dispatch_source_set_cancel_handler(self->_currentLogFileVnode, ^{
-                    dispatch_release(vnode);
-                });
-#endif
-                
-                dispatch_resume(self->_currentLogFileVnode);
-            }
+    if (_currentLogFileHandle == nil) {
+        NSString *logFilePath = [[self currentLogFileInfo] filePath];
+
+        _currentLogFileHandle = [NSFileHandle fileHandleForWritingAtPath:logFilePath];
+        [_currentLogFileHandle seekToEndOfFile];
+
+        if (_currentLogFileHandle) {
+            [self scheduleTimerToRollLogFileDueToAge];
+
+            // Here we are monitoring the log file. In case if it would be deleted ormoved
+            // somewhere we want to roll it and use a new one.
+            _currentLogFileVnode = dispatch_source_create(
+                    DISPATCH_SOURCE_TYPE_VNODE,
+                    [_currentLogFileHandle fileDescriptor],
+                    DISPATCH_VNODE_DELETE | DISPATCH_VNODE_RENAME,
+                    self.loggerQueue
+                    );
+
+            dispatch_source_set_event_handler(_currentLogFileVnode, ^{ @autoreleasepool {
+                                                                          NSLogInfo(@"DDFileLogger: Current logfile was moved. Rolling it and creating a new one");
+                                                                          [self rollLogFileNow];
+                                                                      } });
+
+            #if !OS_OBJECT_USE_OBJC
+            dispatch_source_t vnode = _currentLogFileVnode;
+            dispatch_source_set_cancel_handler(_currentLogFileVnode, ^{
+                dispatch_release(vnode);
+            });
+            #endif
+
+            dispatch_resume(_currentLogFileVnode);
         }
-        
-        localCurrentLogFileHandle = self->_currentLogFileHandle;
-    });
-    
-    return localCurrentLogFileHandle;
+    }
+
+    return _currentLogFileHandle;
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1043,7 +1026,7 @@ static int exception_count = 0;
     [self maybeRollLogFileDueToSize];
 }
 
-- (BOOL)shouldArchiveRecentLogFileInfo:(__unused DDLogFileInfo *)recentLogFileInfo {
+- (BOOL)shouldArchiveRecentLogFileInfo:(DDLogFileInfo *)recentLogFileInfo {
     return NO;
 }
 
