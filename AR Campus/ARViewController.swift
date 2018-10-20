@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ARViewController.swift
 //  AR Campus
 //
 //  Created by Chris Wang on 11/10/17.
@@ -16,7 +16,7 @@ import CocoaLumberjack
 let Altitude: CLLocationDistance = 360
 
 @available(iOS 11.0, *)
-class ViewController: UIViewController {
+class ARViewController: UIViewController {
     
     // TEMP TESTING VARIABLES
     let l1 = CLLocationCoordinate2D(latitude: 34.0987346, longitude: -117.7123592)
@@ -80,7 +80,7 @@ class ViewController: UIViewController {
             updateUserLocationTimer = Timer.scheduledTimer(
                 timeInterval: 0.5,
                 target: self,
-                selector: #selector(ViewController.updateUserLocation),
+                selector: #selector(ARViewController.updateUserLocation),
                 userInfo: nil,
                 repeats: true)
         }
@@ -231,7 +231,7 @@ class ViewController: UIViewController {
 }
 
 //MARK: MKMapViewDelegate
-extension ViewController: MKMapViewDelegate {
+extension ARViewController: MKMapViewDelegate {
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         if annotation is MKUserLocation {
@@ -258,7 +258,7 @@ extension ViewController: MKMapViewDelegate {
 }
 
 //MARK: SceneLocationViewDelegate
-extension ViewController: SceneLocationViewDelegate {
+extension ARViewController: SceneLocationViewDelegate {
     func sceneLocationViewDidAddSceneLocationEstimate(sceneLocationView: SceneLocationView, position: SCNVector3, location: CLLocation) { }
     
     func sceneLocationViewDidRemoveSceneLocationEstimate(sceneLocationView: SceneLocationView, position: SCNVector3, location: CLLocation) { }

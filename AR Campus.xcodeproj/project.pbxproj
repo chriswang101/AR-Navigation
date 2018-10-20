@@ -22,7 +22,7 @@
 		C161F6611FB6EFB400EB9B39 /* Turf.swift in Sources */ = {isa = PBXBuildFile; fileRef = C161F65F1FB6EFB400EB9B39 /* Turf.swift */; };
 		C161F6641FB720E000EB9B39 /* LocationSearchTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C161F6631FB720E000EB9B39 /* LocationSearchTable.swift */; };
 		C19F05071FB63776008571FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19F05061FB63776008571FC /* AppDelegate.swift */; };
-		C19F05091FB63776008571FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19F05081FB63776008571FC /* ViewController.swift */; };
+		C19F05091FB63776008571FC /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19F05081FB63776008571FC /* ARViewController.swift */; };
 		C19F050C1FB63776008571FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C19F050A1FB63776008571FC /* Main.storyboard */; };
 		C19F050E1FB63776008571FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C19F050D1FB63776008571FC /* Assets.xcassets */; };
 		C19F05111FB63776008571FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C19F050F1FB63776008571FC /* LaunchScreen.storyboard */; };
@@ -69,7 +69,7 @@
 		C161F6631FB720E000EB9B39 /* LocationSearchTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchTable.swift; sourceTree = "<group>"; };
 		C19F05031FB63776008571FC /* AR Campus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR Campus.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C19F05061FB63776008571FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C19F05081FB63776008571FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C19F05081FB63776008571FC /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 		C19F050B1FB63776008571FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C19F050D1FB63776008571FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C19F05101FB63776008571FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -172,7 +172,7 @@
 			children = (
 				C13E4192216153FC0098728D /* ARCL */,
 				C19F05061FB63776008571FC /* AppDelegate.swift */,
-				C19F05081FB63776008571FC /* ViewController.swift */,
+				C19F05081FB63776008571FC /* ARViewController.swift */,
 				C19F05341FB64C9F008571FC /* MapViewController.swift */,
 				C161F6631FB720E000EB9B39 /* LocationSearchTable.swift */,
 				C161F6621FB6EFB800EB9B39 /* Turf */,
@@ -412,7 +412,7 @@
 				C13E41CA216154FD0098728D /* CGPoint+Extensions.swift in Sources */,
 				C13E41C8216154FD0098728D /* SceneLocationEstimate.swift in Sources */,
 				C13E41C4216154FD0098728D /* SceneLocationEstimate+Extensions.swift in Sources */,
-				C19F05091FB63776008571FC /* ViewController.swift in Sources */,
+				C19F05091FB63776008571FC /* ARViewController.swift in Sources */,
 				C19F05351FB64C9F008571FC /* MapViewController.swift in Sources */,
 				C13E41C9216154FD0098728D /* LocationManager.swift in Sources */,
 				C161F6641FB720E000EB9B39 /* LocationSearchTable.swift in Sources */,

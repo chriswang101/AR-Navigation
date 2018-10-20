@@ -83,7 +83,7 @@ class MapViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "ARSegue" {
-            let destinationViewController = segue.destination as? ViewController
+            let destinationViewController = segue.destination as? ARViewController
             
             // Pass the selected object to the new view controller.
             destinationViewController?.routeCoordinates = self.routeCoordinates
